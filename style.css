@@ -1,6 +1,32 @@
 body {
   color: rgb(0,0,0);
   font-family: Arial, Helvetica, sans-serif;
+   animation: myfirst 5s;
+  -moz-animation: myfirst 5s infinite; /* Firefox */
+  -webkit-animation: myfirst 5s infinite;
+}
+@-moz-keyframes myfirst /* Firefox */ {
+  0% {
+    background: rgb(120, 210, 233);
+  }
+  50% {
+    background: rgb(230, 230, 107);
+  }
+  100% {
+    background: rgb(180, 64, 171);
+  }
+}
+
+@-webkit-keyframes myfirst /* Firefox */ {
+  0% {
+    background: rgb(70, 153, 185);
+  }
+  50% {
+    background: rgb(81, 230, 101);
+  }
+  100% {
+    background: rgb(79, 70, 202);
+  }
 }
 img {
   display: block;
@@ -11,7 +37,6 @@ img {
 .Resume {
   overflow: hidden;
   color: white;
-  background-color: rgb(103, 136, 226);
   float: center;
   display: block;
   text-align: center;
